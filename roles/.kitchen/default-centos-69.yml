@@ -1,0 +1,9 @@
+---
+username: kitchen
+ssh_key: "/mywork/roles/.kitchen/docker_id_rsa"
+image_id: fa6678c78af2
+container_id: 1302af097b8e51a609396c814b397de6152405131a3449bdf734919efcae5178
+hostname: localhost
+port: 32768
+last_action: converge
+last_error: 

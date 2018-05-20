@@ -1,0 +1,75 @@
+I, [2018-05-20T09:52:10.540252 #8227]  INFO -- Kitchen: -----> Starting Kitchen (v1.21.1)
+I, [2018-05-20T09:52:10.590996 #8227]  INFO -- Kitchen: -----> Creating <default-centos-69>...
+E, [2018-05-20T09:52:10.627592 #8227] ERROR -- Kitchen: ------Exception-------
+E, [2018-05-20T09:52:10.627629 #8227] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2018-05-20T09:52:10.627646 #8227] ERROR -- Kitchen: Message: 1 actions failed.
+>>>>>>     Create failed on instance <default-centos-69>.  Please see .kitchen/logs/default-centos-69.log for more details
+E, [2018-05-20T09:52:10.627659 #8227] ERROR -- Kitchen: ----------------------
+E, [2018-05-20T09:52:10.627671 #8227] ERROR -- Kitchen: ------Backtrace-------
+E, [2018-05-20T09:52:10.627682 #8227] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.1/gems/test-kitchen-1.21.1/lib/kitchen/command.rb:183:in `report_errors'
+E, [2018-05-20T09:52:10.627694 #8227] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.1/gems/test-kitchen-1.21.1/lib/kitchen/command.rb:174:in `run_action'
+E, [2018-05-20T09:52:10.627706 #8227] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.1/gems/test-kitchen-1.21.1/lib/kitchen/command/action.rb:36:in `block in call'
+E, [2018-05-20T09:52:10.627718 #8227] ERROR -- Kitchen: /usr/local/rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/benchmark.rb:293:in `measure'
+E, [2018-05-20T09:52:10.627730 #8227] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.1/gems/test-kitchen-1.21.1/lib/kitchen/command/action.rb:34:in `call'
+E, [2018-05-20T09:52:10.627744 #8227] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.1/gems/test-kitchen-1.21.1/lib/kitchen/cli.rb:52:in `perform'
+E, [2018-05-20T09:52:10.627757 #8227] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.1/gems/test-kitchen-1.21.1/lib/kitchen/cli.rb:193:in `block (2 levels) in <class:CLI>'
+E, [2018-05-20T09:52:10.627770 #8227] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.1/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+E, [2018-05-20T09:52:10.627782 #8227] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.1/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2018-05-20T09:52:10.627795 #8227] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.1/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+E, [2018-05-20T09:52:10.627814 #8227] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.1/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+E, [2018-05-20T09:52:10.627827 #8227] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.1/gems/test-kitchen-1.21.1/bin/kitchen:13:in `block in <top (required)>'
+E, [2018-05-20T09:52:10.627839 #8227] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.1/gems/test-kitchen-1.21.1/lib/kitchen/errors.rb:171:in `with_friendly_errors'
+E, [2018-05-20T09:52:10.627851 #8227] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.1/gems/test-kitchen-1.21.1/bin/kitchen:13:in `<top (required)>'
+E, [2018-05-20T09:52:10.627863 #8227] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.1/bin/kitchen:23:in `load'
+E, [2018-05-20T09:52:10.627875 #8227] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.1/bin/kitchen:23:in `<main>'
+E, [2018-05-20T09:52:10.627887 #8227] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.1/bin/ruby_executable_hooks:15:in `eval'
+E, [2018-05-20T09:52:10.627898 #8227] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.1/bin/ruby_executable_hooks:15:in `<main>'
+E, [2018-05-20T09:52:10.627910 #8227] ERROR -- Kitchen: ----End Backtrace-----
+E, [2018-05-20T09:52:10.627921 #8227] ERROR -- Kitchen: -Composite Exception--
+E, [2018-05-20T09:52:10.627931 #8227] ERROR -- Kitchen: Class: Kitchen::InstanceFailure
+E, [2018-05-20T09:52:10.627943 #8227] ERROR -- Kitchen: Message: Create failed on instance <default-centos-69>.  Please see .kitchen/logs/default-centos-69.log for more details
+E, [2018-05-20T09:52:10.627956 #8227] ERROR -- Kitchen: ----------------------
+E, [2018-05-20T09:52:10.627996 #8227] ERROR -- Kitchen: ------Backtrace-------
+E, [2018-05-20T09:52:10.628007 #8227] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.1/gems/kitchen-docker-2.6.0/lib/kitchen/driver/docker.rb:378:in `rescue in container_ssh_port'
+E, [2018-05-20T09:52:10.628020 #8227] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.1/gems/kitchen-docker-2.6.0/lib/kitchen/driver/docker.rb:374:in `container_ssh_port'
+E, [2018-05-20T09:52:10.628051 #8227] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.1/gems/kitchen-docker-2.6.0/lib/kitchen/driver/docker.rb:125:in `create'
+E, [2018-05-20T09:52:10.628118 #8227] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.1/gems/test-kitchen-1.21.1/lib/kitchen/instance.rb:469:in `public_send'
+E, [2018-05-20T09:52:10.628144 #8227] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.1/gems/test-kitchen-1.21.1/lib/kitchen/instance.rb:469:in `block in perform_action'
+E, [2018-05-20T09:52:10.628157 #8227] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.1/gems/test-kitchen-1.21.1/lib/kitchen/instance.rb:536:in `synchronize_or_call'
+E, [2018-05-20T09:52:10.628170 #8227] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.1/gems/test-kitchen-1.21.1/lib/kitchen/instance.rb:498:in `block in action'
+E, [2018-05-20T09:52:10.628182 #8227] ERROR -- Kitchen: /usr/local/rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/benchmark.rb:293:in `measure'
+E, [2018-05-20T09:52:10.628194 #8227] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.1/gems/test-kitchen-1.21.1/lib/kitchen/instance.rb:497:in `action'
+E, [2018-05-20T09:52:10.628206 #8227] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.1/gems/test-kitchen-1.21.1/lib/kitchen/instance.rb:469:in `perform_action'
+E, [2018-05-20T09:52:10.628219 #8227] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.1/gems/test-kitchen-1.21.1/lib/kitchen/instance.rb:379:in `create_action'
+E, [2018-05-20T09:52:10.628236 #8227] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.1/gems/test-kitchen-1.21.1/lib/kitchen/instance.rb:368:in `block in transition_to'
+E, [2018-05-20T09:52:10.628248 #8227] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.1/gems/test-kitchen-1.21.1/lib/kitchen/instance.rb:367:in `each'
+E, [2018-05-20T09:52:10.628258 #8227] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.1/gems/test-kitchen-1.21.1/lib/kitchen/instance.rb:367:in `transition_to'
+E, [2018-05-20T09:52:10.628271 #8227] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.1/gems/test-kitchen-1.21.1/lib/kitchen/instance.rb:124:in `create'
+E, [2018-05-20T09:52:10.628284 #8227] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.1/gems/test-kitchen-1.21.1/lib/kitchen/command.rb:197:in `public_send'
+E, [2018-05-20T09:52:10.628296 #8227] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.1/gems/test-kitchen-1.21.1/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2018-05-20T09:52:10.628310 #8227] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.1/gems/test-kitchen-1.21.1/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2018-05-20T09:52:10.628321 #8227] ERROR -- Kitchen: ----End Backtrace-----
+E, [2018-05-20T09:52:10.628331 #8227] ERROR -- Kitchen: ---Nested Exception---
+E, [2018-05-20T09:52:10.628342 #8227] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2018-05-20T09:52:10.628353 #8227] ERROR -- Kitchen: Message: Docker reports container has no ssh port mapped
+E, [2018-05-20T09:52:10.628363 #8227] ERROR -- Kitchen: ----------------------
+E, [2018-05-20T09:52:10.628373 #8227] ERROR -- Kitchen: ------Backtrace-------
+E, [2018-05-20T09:52:10.628383 #8227] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.1/gems/kitchen-docker-2.6.0/lib/kitchen/driver/docker.rb:378:in `rescue in container_ssh_port'
+E, [2018-05-20T09:52:10.628394 #8227] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.1/gems/kitchen-docker-2.6.0/lib/kitchen/driver/docker.rb:374:in `container_ssh_port'
+E, [2018-05-20T09:52:10.628404 #8227] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.1/gems/kitchen-docker-2.6.0/lib/kitchen/driver/docker.rb:125:in `create'
+E, [2018-05-20T09:52:10.628415 #8227] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.1/gems/test-kitchen-1.21.1/lib/kitchen/instance.rb:469:in `public_send'
+E, [2018-05-20T09:52:10.628426 #8227] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.1/gems/test-kitchen-1.21.1/lib/kitchen/instance.rb:469:in `block in perform_action'
+E, [2018-05-20T09:52:10.628437 #8227] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.1/gems/test-kitchen-1.21.1/lib/kitchen/instance.rb:536:in `synchronize_or_call'
+E, [2018-05-20T09:52:10.628452 #8227] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.1/gems/test-kitchen-1.21.1/lib/kitchen/instance.rb:498:in `block in action'
+E, [2018-05-20T09:52:10.628464 #8227] ERROR -- Kitchen: /usr/local/rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/benchmark.rb:293:in `measure'
+E, [2018-05-20T09:52:10.628475 #8227] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.1/gems/test-kitchen-1.21.1/lib/kitchen/instance.rb:497:in `action'
+E, [2018-05-20T09:52:10.628485 #8227] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.1/gems/test-kitchen-1.21.1/lib/kitchen/instance.rb:469:in `perform_action'
+E, [2018-05-20T09:52:10.628499 #8227] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.1/gems/test-kitchen-1.21.1/lib/kitchen/instance.rb:379:in `create_action'
+E, [2018-05-20T09:52:10.628510 #8227] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.1/gems/test-kitchen-1.21.1/lib/kitchen/instance.rb:368:in `block in transition_to'
+E, [2018-05-20T09:52:10.628521 #8227] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.1/gems/test-kitchen-1.21.1/lib/kitchen/instance.rb:367:in `each'
+E, [2018-05-20T09:52:10.628531 #8227] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.1/gems/test-kitchen-1.21.1/lib/kitchen/instance.rb:367:in `transition_to'
+E, [2018-05-20T09:52:10.628542 #8227] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.1/gems/test-kitchen-1.21.1/lib/kitchen/instance.rb:124:in `create'
+E, [2018-05-20T09:52:10.628553 #8227] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.1/gems/test-kitchen-1.21.1/lib/kitchen/command.rb:197:in `public_send'
+E, [2018-05-20T09:52:10.628564 #8227] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.1/gems/test-kitchen-1.21.1/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2018-05-20T09:52:10.628611 #8227] ERROR -- Kitchen: /usr/local/rvm/gems/ruby-2.4.1/gems/test-kitchen-1.21.1/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2018-05-20T09:52:10.628636 #8227] ERROR -- Kitchen: ----End Backtrace-----

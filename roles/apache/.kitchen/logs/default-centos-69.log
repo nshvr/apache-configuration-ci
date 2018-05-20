@@ -1,0 +1,56 @@
+I, [2018-05-20T09:52:10.591069 #8227]  INFO -- default-centos-69: -----> Creating <default-centos-69>...
+I, [2018-05-20T09:52:10.602802 #8227]  INFO -- default-centos-69: Error: No such container: 6cfe51df0a54ffab51b2a44e4d5335854ccf42b2daa7197fd35831e80e0c4002
+E, [2018-05-20T09:52:10.623962 #8227] ERROR -- default-centos-69: Create failed on instance <default-centos-69>.
+E, [2018-05-20T09:52:10.624125 #8227] ERROR -- default-centos-69: ------Exception-------
+E, [2018-05-20T09:52:10.624151 #8227] ERROR -- default-centos-69: Class: Kitchen::ActionFailed
+E, [2018-05-20T09:52:10.624164 #8227] ERROR -- default-centos-69: Message: Docker reports container has no ssh port mapped
+E, [2018-05-20T09:52:10.624176 #8227] ERROR -- default-centos-69: ----------------------
+E, [2018-05-20T09:52:10.624193 #8227] ERROR -- default-centos-69: ------Backtrace-------
+E, [2018-05-20T09:52:10.624203 #8227] ERROR -- default-centos-69: /usr/local/rvm/gems/ruby-2.4.1/gems/kitchen-docker-2.6.0/lib/kitchen/driver/docker.rb:378:in `rescue in container_ssh_port'
+E, [2018-05-20T09:52:10.624214 #8227] ERROR -- default-centos-69: /usr/local/rvm/gems/ruby-2.4.1/gems/kitchen-docker-2.6.0/lib/kitchen/driver/docker.rb:374:in `container_ssh_port'
+E, [2018-05-20T09:52:10.624228 #8227] ERROR -- default-centos-69: /usr/local/rvm/gems/ruby-2.4.1/gems/kitchen-docker-2.6.0/lib/kitchen/driver/docker.rb:125:in `create'
+E, [2018-05-20T09:52:10.624245 #8227] ERROR -- default-centos-69: /usr/local/rvm/gems/ruby-2.4.1/gems/test-kitchen-1.21.1/lib/kitchen/instance.rb:469:in `public_send'
+E, [2018-05-20T09:52:10.624267 #8227] ERROR -- default-centos-69: /usr/local/rvm/gems/ruby-2.4.1/gems/test-kitchen-1.21.1/lib/kitchen/instance.rb:469:in `block in perform_action'
+E, [2018-05-20T09:52:10.624279 #8227] ERROR -- default-centos-69: /usr/local/rvm/gems/ruby-2.4.1/gems/test-kitchen-1.21.1/lib/kitchen/instance.rb:536:in `synchronize_or_call'
+E, [2018-05-20T09:52:10.624293 #8227] ERROR -- default-centos-69: /usr/local/rvm/gems/ruby-2.4.1/gems/test-kitchen-1.21.1/lib/kitchen/instance.rb:498:in `block in action'
+E, [2018-05-20T09:52:10.624311 #8227] ERROR -- default-centos-69: /usr/local/rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/benchmark.rb:293:in `measure'
+E, [2018-05-20T09:52:10.624322 #8227] ERROR -- default-centos-69: /usr/local/rvm/gems/ruby-2.4.1/gems/test-kitchen-1.21.1/lib/kitchen/instance.rb:497:in `action'
+E, [2018-05-20T09:52:10.624344 #8227] ERROR -- default-centos-69: /usr/local/rvm/gems/ruby-2.4.1/gems/test-kitchen-1.21.1/lib/kitchen/instance.rb:469:in `perform_action'
+E, [2018-05-20T09:52:10.624354 #8227] ERROR -- default-centos-69: /usr/local/rvm/gems/ruby-2.4.1/gems/test-kitchen-1.21.1/lib/kitchen/instance.rb:379:in `create_action'
+E, [2018-05-20T09:52:10.624375 #8227] ERROR -- default-centos-69: /usr/local/rvm/gems/ruby-2.4.1/gems/test-kitchen-1.21.1/lib/kitchen/instance.rb:368:in `block in transition_to'
+E, [2018-05-20T09:52:10.624386 #8227] ERROR -- default-centos-69: /usr/local/rvm/gems/ruby-2.4.1/gems/test-kitchen-1.21.1/lib/kitchen/instance.rb:367:in `each'
+E, [2018-05-20T09:52:10.624396 #8227] ERROR -- default-centos-69: /usr/local/rvm/gems/ruby-2.4.1/gems/test-kitchen-1.21.1/lib/kitchen/instance.rb:367:in `transition_to'
+E, [2018-05-20T09:52:10.624417 #8227] ERROR -- default-centos-69: /usr/local/rvm/gems/ruby-2.4.1/gems/test-kitchen-1.21.1/lib/kitchen/instance.rb:124:in `create'
+E, [2018-05-20T09:52:10.624428 #8227] ERROR -- default-centos-69: /usr/local/rvm/gems/ruby-2.4.1/gems/test-kitchen-1.21.1/lib/kitchen/command.rb:197:in `public_send'
+E, [2018-05-20T09:52:10.624446 #8227] ERROR -- default-centos-69: /usr/local/rvm/gems/ruby-2.4.1/gems/test-kitchen-1.21.1/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2018-05-20T09:52:10.624459 #8227] ERROR -- default-centos-69: /usr/local/rvm/gems/ruby-2.4.1/gems/test-kitchen-1.21.1/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2018-05-20T09:52:10.624477 #8227] ERROR -- default-centos-69: ----End Backtrace-----
+E, [2018-05-20T09:52:10.624487 #8227] ERROR -- default-centos-69: ---Nested Exception---
+E, [2018-05-20T09:52:10.624508 #8227] ERROR -- default-centos-69: Class: Kitchen::ShellOut::ShellCommandFailed
+E, [2018-05-20T09:52:10.624523 #8227] ERROR -- default-centos-69: Message: Expected process to exit with [0], but received '1'
+---- Begin output of docker -H unix:///var/run/docker.sock port 6cfe51df0a54ffab51b2a44e4d5335854ccf42b2daa7197fd35831e80e0c4002 22/tcp ----
+STDOUT: 
+STDERR: Error: No such container: 6cfe51df0a54ffab51b2a44e4d5335854ccf42b2daa7197fd35831e80e0c4002
+---- End output of docker -H unix:///var/run/docker.sock port 6cfe51df0a54ffab51b2a44e4d5335854ccf42b2daa7197fd35831e80e0c4002 22/tcp ----
+Ran docker -H unix:///var/run/docker.sock port 6cfe51df0a54ffab51b2a44e4d5335854ccf42b2daa7197fd35831e80e0c4002 22/tcp returned 1
+E, [2018-05-20T09:52:10.624543 #8227] ERROR -- default-centos-69: ----------------------
+E, [2018-05-20T09:52:10.624555 #8227] ERROR -- default-centos-69: ------Backtrace-------
+E, [2018-05-20T09:52:10.624565 #8227] ERROR -- default-centos-69: /usr/local/rvm/gems/ruby-2.4.1/gems/kitchen-docker-2.6.0/lib/kitchen/driver/docker.rb:378:in `rescue in container_ssh_port'
+E, [2018-05-20T09:52:10.624587 #8227] ERROR -- default-centos-69: /usr/local/rvm/gems/ruby-2.4.1/gems/kitchen-docker-2.6.0/lib/kitchen/driver/docker.rb:374:in `container_ssh_port'
+E, [2018-05-20T09:52:10.624598 #8227] ERROR -- default-centos-69: /usr/local/rvm/gems/ruby-2.4.1/gems/kitchen-docker-2.6.0/lib/kitchen/driver/docker.rb:125:in `create'
+E, [2018-05-20T09:52:10.624609 #8227] ERROR -- default-centos-69: /usr/local/rvm/gems/ruby-2.4.1/gems/test-kitchen-1.21.1/lib/kitchen/instance.rb:469:in `public_send'
+E, [2018-05-20T09:52:10.624619 #8227] ERROR -- default-centos-69: /usr/local/rvm/gems/ruby-2.4.1/gems/test-kitchen-1.21.1/lib/kitchen/instance.rb:469:in `block in perform_action'
+E, [2018-05-20T09:52:10.624629 #8227] ERROR -- default-centos-69: /usr/local/rvm/gems/ruby-2.4.1/gems/test-kitchen-1.21.1/lib/kitchen/instance.rb:536:in `synchronize_or_call'
+E, [2018-05-20T09:52:10.624639 #8227] ERROR -- default-centos-69: /usr/local/rvm/gems/ruby-2.4.1/gems/test-kitchen-1.21.1/lib/kitchen/instance.rb:498:in `block in action'
+E, [2018-05-20T09:52:10.624649 #8227] ERROR -- default-centos-69: /usr/local/rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/benchmark.rb:293:in `measure'
+E, [2018-05-20T09:52:10.624661 #8227] ERROR -- default-centos-69: /usr/local/rvm/gems/ruby-2.4.1/gems/test-kitchen-1.21.1/lib/kitchen/instance.rb:497:in `action'
+E, [2018-05-20T09:52:10.624700 #8227] ERROR -- default-centos-69: /usr/local/rvm/gems/ruby-2.4.1/gems/test-kitchen-1.21.1/lib/kitchen/instance.rb:469:in `perform_action'
+E, [2018-05-20T09:52:10.624711 #8227] ERROR -- default-centos-69: /usr/local/rvm/gems/ruby-2.4.1/gems/test-kitchen-1.21.1/lib/kitchen/instance.rb:379:in `create_action'
+E, [2018-05-20T09:52:10.624721 #8227] ERROR -- default-centos-69: /usr/local/rvm/gems/ruby-2.4.1/gems/test-kitchen-1.21.1/lib/kitchen/instance.rb:368:in `block in transition_to'
+E, [2018-05-20T09:52:10.624731 #8227] ERROR -- default-centos-69: /usr/local/rvm/gems/ruby-2.4.1/gems/test-kitchen-1.21.1/lib/kitchen/instance.rb:367:in `each'
+E, [2018-05-20T09:52:10.624741 #8227] ERROR -- default-centos-69: /usr/local/rvm/gems/ruby-2.4.1/gems/test-kitchen-1.21.1/lib/kitchen/instance.rb:367:in `transition_to'
+E, [2018-05-20T09:52:10.624751 #8227] ERROR -- default-centos-69: /usr/local/rvm/gems/ruby-2.4.1/gems/test-kitchen-1.21.1/lib/kitchen/instance.rb:124:in `create'
+E, [2018-05-20T09:52:10.624761 #8227] ERROR -- default-centos-69: /usr/local/rvm/gems/ruby-2.4.1/gems/test-kitchen-1.21.1/lib/kitchen/command.rb:197:in `public_send'
+E, [2018-05-20T09:52:10.624771 #8227] ERROR -- default-centos-69: /usr/local/rvm/gems/ruby-2.4.1/gems/test-kitchen-1.21.1/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2018-05-20T09:52:10.624780 #8227] ERROR -- default-centos-69: /usr/local/rvm/gems/ruby-2.4.1/gems/test-kitchen-1.21.1/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2018-05-20T09:52:10.624813 #8227] ERROR -- default-centos-69: ----End Backtrace-----
