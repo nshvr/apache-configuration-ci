@@ -5,7 +5,8 @@
  - set_fact: ipaddress="{{output.stdout}}"
 
  - name: Installing Apache
-   #command: yum install httpd -y 
+   #command: yum install httpd -y
+   command: touch hari.txt
    yum: name=httpd state=present
    notify: httpd restart
 
