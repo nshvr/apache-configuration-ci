@@ -7,7 +7,7 @@
  - name: Installing Apache
    #command: yum install httpd -y
    #command: touch hari.txt
-   file: path=/var/log/php.log state=touch mode=0666
+   #file: path=/var/log/php.log state=touch mode=0666
    yum: name=httpd state=present
    notify: httpd restart
 
